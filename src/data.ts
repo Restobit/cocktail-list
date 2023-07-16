@@ -44,8 +44,8 @@ export const Cocktails: Cocktail[] = [
     glass: "martini",
     decoration: "koktélcseresznye",
     instructions:
-      "Töltsd az összetevőket jégre a keverőpohárba, majd keverés után szűrd a hűtött martinis pohárba! Ha skót whiskeyvel készíted, a koktél neve Rob Roy",
-    other_info: "skót whiskeyvel Rob Roy",
+      "Töltsd az összetevőket jégre a keverőpohárba, majd keverés után szűrd a hűtött martinis pohárba!",
+    other_info: "Ha skót whiskeyvel készíted, a koktél neve Rob Roy",
   },
   {
     id: 2,
@@ -658,7 +658,7 @@ export const Cocktails: Cocktail[] = [
     glass: "pezsgős",
     decoration: "-",
     instructions:
-      "Töltsd a Cassis-t a pezsgőspohárba, majd töltsd fel pezsgővel úgy, hogy összekeveredjen!.",
+      "Töltsd a Cassis-t a pezsgőspohárba, majd töltsd fel pezsgővel úgy, hogy összekeveredjen!",
   },
   {
     id: 24,
@@ -763,7 +763,7 @@ export const Cocktails: Cocktail[] = [
     glass: "shot",
     decoration: "-",
     instructions:
-      "Bárkanál segítségével rétegezd a krémlikőrt a baracklikőeew, majd csepegtetsd bele a grenadint!",
+      "Bárkanál segítségével rétegezd a krémlikőrt a baracklikőrre, majd csepegtetsd bele a grenadint!",
   },
   {
     id: 28,
@@ -861,7 +861,7 @@ export const Cocktails: Cocktail[] = [
   },
   {
     id: 31,
-    name: "long_island_iced_tea",
+    name: "long island iced tea",
     image_name: "long_island_iced_tea.jpg",
     own_image_name: "own_long_island_iced_tea.jpg",
     ingredients: [
@@ -1068,7 +1068,7 @@ export const Cocktails: Cocktail[] = [
     ],
     technique: "épített ital",
     glass: "old fashioned (nagy)",
-    decoration: "defriss gyümölcs",
+    decoration: "friss gyümölcs",
     instructions:
       "Vágd fel a lime-ot és a gyümölcsöt, tedd a pohárba, add hozzá a cukrot és nyomkodd meg mudlerrel! Töltsd fel a poharat jéggel, add hozzá a Cachaca-t és keverd meg bárkanállal!",
   },
@@ -1203,7 +1203,7 @@ export const Cocktails: Cocktail[] = [
     glass: "long drink",
     decoration: "friss zellerszár",
     instructions:
-      "Töltsd a vodkát jégre, a lehűtött long drink pohárba!. Add hozzá a fűszereket és a citromlét, töltsd fel paradicsomlével és keverd meg bárkanállal!",
+      "Töltsd a vodkát jégre, a lehűtött long drink pohárba. Add hozzá a fűszereket és a citromlét, töltsd fel paradicsomlével és keverd meg bárkanállal!",
   },
 
   {
@@ -1270,7 +1270,7 @@ export const Cocktails: Cocktail[] = [
       {
         quantity: 2.0,
         unit: "cl",
-        name: "fehér",
+        name: "fehér rum",
       },
       {
         quantity: 1.0,
@@ -1372,9 +1372,14 @@ export const Cocktails: Cocktail[] = [
         name: "monin kókuszszirup",
       },
       {
-        quantity: "4-5 | 2.0",
-        unit: "dkg | cl",
-        name: "friss eper | monin strawberry püré",
+        quantity: "4-5",
+        unit: "dkg",
+        name: "friss eper",
+      },
+      {
+        quantity: "[VAGY 2.0",
+        unit: "cl",
+        name: "monin strawberry püré]",
       },
       {
         quantity: 2.0,
