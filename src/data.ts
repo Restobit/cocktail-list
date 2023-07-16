@@ -440,7 +440,7 @@ export const Cocktails: Cocktail[] = [
         name: "martini rosso",
       },
     ],
-    technique: "épített ital / keverő pohár",
+    technique: "épített ital / keverőpohár",
     glass: "old fashioned",
     decoration: "narancs cikk és / vagy narancshéjpermet",
     instructions:
@@ -1133,7 +1133,7 @@ export const Cocktails: Cocktail[] = [
         name: "szódavíz felöntés",
       },
     ],
-    technique: "épített ital / keverő pohár",
+    technique: "épített ital / keverőpohár",
     glass: "old fashioned",
     decoration: "narancs cikk, koktélcseresznye",
     instructions:
