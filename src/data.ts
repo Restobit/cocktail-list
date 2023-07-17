@@ -442,7 +442,7 @@ export const Cocktails: Cocktail[] = [
     ],
     technique: "épített ital / keverőpohár",
     glass: "old fashioned",
-    decoration: "narancs cikk és / vagy narancshéjpermet",
+    decoration: "narancs cikk és / vagy narancshéj permet",
     instructions:
       "Töltsd az összetevőket jégre a keverőpohárba, majd keverés után szűrd old fashioned pohárba!",
   },
@@ -464,13 +464,13 @@ export const Cocktails: Cocktail[] = [
       },
       {
         quantity: 1,
-        unit: "dash",
+        unit: "öntet",
         name: "szóda",
       },
     ],
     technique: "épített ital",
     glass: "old fashioned",
-    decoration: "narancs cikk és / vagy narancshéjpermet",
+    decoration: "narancs cikk és / vagy narancshéj permet",
     instructions:
       "Hűtsd le az old fashioned vagy colins poharat, majd töltsd jégre az összetevőket, végül kever meg bárkanállal!",
   },
@@ -686,7 +686,7 @@ export const Cocktails: Cocktail[] = [
   {
     id: 25,
     name: "tequila sunrise",
-    image_name: "tequila_sunrise.jpg",
+    image_name: "tequila_sunrise.png",
     own_image_name: "own_tequila_sunrise.jpg",
     ingredients: [
       {
@@ -817,7 +817,7 @@ export const Cocktails: Cocktail[] = [
       {
         quantity: 1.0,
         unit: "cl",
-        name: "monin mandulaszirup",
+        name: "monin mandulaszirup (orgeat)",
       },
       {
         quantity: 1.0,
@@ -913,11 +913,11 @@ export const Cocktails: Cocktail[] = [
     glass: "long drink",
     decoration: "-",
     instructions:
-      "Töltsd jégre az italokat, add hozzá a citrusokat, töld fel egy kevés kólával és keverd meg bárkanállal.",
+      "Töltsd jégre az italokat, add hozzá a citrusokat, töltd fel egy kevés kólával és keverd meg bárkanállal.",
   },
   {
     id: 32,
-    name: "mai ta",
+    name: "mai tai",
     image_name: "mai_tai.jpg",
     own_image_name: "own_mai_tai.jpg",
     ingredients: [
@@ -927,7 +927,7 @@ export const Cocktails: Cocktail[] = [
         name: "bacardi black",
       },
       {
-        quantity: 4.0,
+        quantity: 2.0,
         unit: "cl",
         name: "bacardi gold",
       },
@@ -939,7 +939,7 @@ export const Cocktails: Cocktail[] = [
       {
         quantity: 1.5,
         unit: "cl",
-        name: "ogreat",
+        name: "orgeat (mandulaszirup)",
       },
       {
         quantity: 2.0,
@@ -951,7 +951,7 @@ export const Cocktails: Cocktail[] = [
     glass: "old fashioned (nagy)",
     decoration: "narancs szelet, koktélcseresznye, limecikk, menta",
     instructions:
-      "Az italt shakerben készítjük, majd old fashioned pohárba szűrjük!",
+      "Az italt shakerben készítjük, majd törtjégre, old fashioned pohárba szűrjük.",
   },
 
   {
@@ -1010,7 +1010,7 @@ export const Cocktails: Cocktail[] = [
       {
         quantity: 0.75,
         unit: "cl",
-        name: "narancshéjlikőr",
+        name: "narancshéj likőr",
       },
       {
         quantity: 1.5,
@@ -1025,7 +1025,7 @@ export const Cocktails: Cocktail[] = [
       {
         quantity: 1.0,
         unit: "dash",
-        name: " angostura bitters",
+        name: "angostura bitters",
       },
       {
         quantity: 12.0,
@@ -1122,7 +1122,7 @@ export const Cocktails: Cocktail[] = [
       {
         quantity: 1.0,
         unit: "dash",
-        name: "Angostura Bitters",
+        name: "angostura bitters",
       },
       {
         quantity: 1.0,
@@ -1167,7 +1167,7 @@ export const Cocktails: Cocktail[] = [
     ],
     technique: "shaker",
     glass: "old fashioned",
-    decoration: "koktélcseresznye, narancshéjpermet",
+    decoration: "koktélcseresznye, narancshéj permet",
     instructions:
       "Az italt shakerben készítjük, majd hűtött old fashioned pohárba jégre töltjük.",
   },
@@ -1257,7 +1257,7 @@ export const Cocktails: Cocktail[] = [
     ],
     technique: "shaker",
     glass: "martini",
-    decoration: "narancshéjpermet",
+    decoration: "narancshéj permet",
     instructions:
       "Az italt shakerben készítjük, majd hűtött martinis pohárba duplán szűrjük!",
   },
@@ -1298,7 +1298,7 @@ export const Cocktails: Cocktail[] = [
       {
         quantity: 2.0,
         unit: "cl",
-        name: "fehér",
+        name: "fehér rum",
       },
       {
         quantity: 1.0,

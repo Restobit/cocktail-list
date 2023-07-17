@@ -1,5 +1,6 @@
 import { Cocktail } from "../data";
 import cocktailImage from "../cocktail.png";
+import tequilsSunrise from "../tequila_sunrise.png";
 
 export default function Card({
   id,
@@ -8,17 +9,29 @@ export default function Card({
   own_image_name,
   ingredients,
   technique,
+  glass,
   decoration,
   instructions,
   other_info,
 }: Cocktail) {
   return (
     <div className="card">
-      <img src={cocktailImage} alt="cocktail" width="100" height="200" />
+      {image_name === "tequila_sunrise.png" ? (
+        <img
+          src={tequilsSunrise}
+          alt="tequila sunrise"
+          width="auto"
+          height="200"
+        />
+      ) : (
+        <img src={cocktailImage} alt="cocktail" width="100" height="200" />
+      )}
 
       <div className="cocktail">
         <div className="title">
-          <p>{name}</p>
+          <p>
+            {id} {name}
+          </p>
         </div>
 
         <div className="details">
@@ -33,6 +46,11 @@ export default function Card({
           <div className="technique">
             <p>
               <span>Technika:</span> {technique}
+            </p>
+          </div>
+          <div className="technique">
+            <p>
+              <span>Pohár:</span> {glass}
             </p>
           </div>
           <div className="decoration">
