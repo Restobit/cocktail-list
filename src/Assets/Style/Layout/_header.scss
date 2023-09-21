@@ -1,0 +1,9 @@
+.header {
+  width: 90%;
+  margin-top: 1rem;
+
+  @media (min-width: 640px) {
+    width: 50%;
+    margin-top: 1.5rem;
+  }
+}

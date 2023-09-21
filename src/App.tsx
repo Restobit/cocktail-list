@@ -1,57 +1,57 @@
-import { Cocktails } from "./data";
-import Card from "./components/Card";
+import { useState } from "react";
+import { Cocktails } from "./cocktails_data";
+import { CocktailCard } from "./Components/CocktailCard";
+import { useDebouncedCallback } from "use-debounce";
 import "./App.scss";
-import "./style/main.scss";
-import { useRef, useEffect, useState } from "react";
-import { useDebounce } from "use-debounce";
 
 function App() {
-  const [searchInput, setSearchInput] = useState("");
-  const [cocktailsData, setCocktailsData] = useState(Cocktails);
-  const inputRef = useRef<HTMLInputElement>(null);
-  const [debouncedFilter] = useDebounce(inputRef.current?.value, 500);
+  const [searchQuery, setSearchQuery] = useState("");
+  const debounced = useDebouncedCallback((value) => {
+    setSearchQuery(value);
+  }, 300);
 
-  useEffect(() => {
-    if (searchInput.length > 0) {
-      console.log("inputRef", inputRef.current?.value);
+  type SearchPropTypes =
+    | "name"
+    | "technique"
+    | "glass"
+    | "decoration"
+    | "instructions";
 
-      const filteredCoctailsData = Cocktails.filter((cocktail) => {
-        if (inputRef.current) {
-          return cocktail.name.match(inputRef?.current?.value.toLowerCase());
-        }
-        return [];
-      });
+  const searchProps: SearchPropTypes[] = [
+    "name",
+    "technique",
+    "glass",
+    "decoration",
+    "instructions",
+  ];
 
-      setCocktailsData(filteredCoctailsData);
-
-      console.log(filteredCoctailsData);
-    } else {
-      setCocktailsData(Cocktails);
-    }
-  }, [debouncedFilter]);
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    e.preventDefault();
-    setSearchInput(e.target.value.toLowerCase());
-  };
+  const filteredCocktails = Cocktails.filter((cocktail) => {
+    return (
+      searchProps.some((searchProp) =>
+        cocktail[searchProp].toLowerCase().includes(searchQuery)
+      ) ||
+      cocktail.ingredients.some((ingredient) =>
+        ingredient.name.toLowerCase().includes(searchQuery)
+      )
+    );
+  });
 
   return (
     <div className="app">
-      <div className="wrap">
+      <div className="header">
         <div className="search">
           <input
             type="text"
-            className="searchTerm"
+            className="search-term"
             placeholder="Keresés"
-            onChange={handleChange}
-            ref={inputRef}
+            onChange={(e) => debounced(e.target.value)}
           />
         </div>
       </div>
 
       <div className="cocktail-list">
-        {cocktailsData.map((cocktail) => (
-          <Card key={cocktail.id} {...cocktail} />
+        {filteredCocktails.map((cocktail) => (
+          <CocktailCard key={cocktail.id} {...cocktail} />
         ))}
       </div>
     </div>

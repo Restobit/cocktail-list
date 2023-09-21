@@ -1,6 +1,8 @@
+@use "./Assets/Style/Abstracts/" as color;
+
 html {
-  background-color: rgb(70, 70, 70);
-  color: rgb(230, 230, 230);
+  background-color: color.$primaryBackground;
+  color: color.$primaryFont;
 }
 
 body {

@@ -1,28 +1,11 @@
-export interface Ingredients {
-  quantity?: number | string;
-  unit?: string;
-  name: string;
-}
-
-export interface Cocktail {
-  id: number;
-  name: string;
-  image_name?: string;
-  own_image_name?: string;
-  ingredients: Ingredients[];
-  technique: string;
-  glass: string;
-  decoration: string;
-  instructions: string;
-  other_info?: string;
-}
+import { Cocktail } from "./Components/CocktailCard/CocktailCard.types";
 
 export const Cocktails: Cocktail[] = [
   {
     id: 1,
     name: "manhattan",
-    image_name: "manhattan.jpg",
-    own_image_name: "own_manhattan.jpg",
+    image_name: "manhattan",
+    own_image_name: "own_manhattan",
     ingredients: [
       {
         quantity: 5.0,
@@ -50,8 +33,8 @@ export const Cocktails: Cocktail[] = [
   {
     id: 2,
     name: "frozen daiquiri",
-    image_name: "frozen_daiquiri.jpg",
-    own_image_name: "own_frozen_daiquiri.jpg",
+    image_name: "frozen_daiquiri",
+    own_image_name: "own_frozen_daiquiri",
     ingredients: [
       {
         quantity: 5.0,
@@ -78,8 +61,8 @@ export const Cocktails: Cocktail[] = [
   {
     id: 3,
     name: "passion fruit daiquiri",
-    image_name: "passion_fruit_daiquiri.jpg",
-    own_image_name: "own_passion_fruit_daiquiri.jpg",
+    image_name: "passion_fruit_daiquiri",
+    own_image_name: "own_passion_fruit_daiquiri",
     ingredients: [
       {
         quantity: 5.0,
@@ -111,8 +94,8 @@ export const Cocktails: Cocktail[] = [
   {
     id: 4,
     name: "daiquiri",
-    image_name: "daiquiri.jpg",
-    own_image_name: "own_daiquiri.jpg",
+    image_name: "daiquiri",
+    own_image_name: "own_daiquiri",
     ingredients: [
       {
         quantity: 5.0,
@@ -139,8 +122,8 @@ export const Cocktails: Cocktail[] = [
   {
     id: 5,
     name: "strawberry daiquiri",
-    image_name: "strawberry_daiquiri.jpg",
-    own_image_name: "own_strawberry_daiquiri.jpg",
+    image_name: "strawberry_daiquiri",
+    own_image_name: "own_strawberry_daiquiri",
     ingredients: [
       {
         quantity: 5.0,
@@ -172,8 +155,8 @@ export const Cocktails: Cocktail[] = [
   {
     id: 6,
     name: "green apple daiquiri",
-    image_name: "green_apple_daiquiri.jpg",
-    own_image_name: "own_green_apple_daiquiri.jpg",
+    image_name: "green_apple_daiquiri",
+    own_image_name: "own_green_apple_daiquiri",
     ingredients: [
       {
         quantity: 5.0,
@@ -205,8 +188,8 @@ export const Cocktails: Cocktail[] = [
   {
     id: 7,
     name: "mojito",
-    image_name: "mojito.jpg",
-    own_image_name: "own_mojito.jpg",
+    image_name: "mojito",
+    own_image_name: "own_mojito",
     ingredients: [
       {
         quantity: 5.0,
@@ -243,8 +226,8 @@ export const Cocktails: Cocktail[] = [
   {
     id: 8,
     name: "cuba libre",
-    image_name: "cuba_libre.jpg",
-    own_image_name: "own_cuba_libre.jpg",
+    image_name: "cuba_libre",
+    own_image_name: "own_cuba_libre",
     ingredients: [
       {
         quantity: 5.0,
@@ -263,8 +246,8 @@ export const Cocktails: Cocktail[] = [
   {
     id: 9,
     name: "dry martini",
-    image_name: "dry_martini.jpg",
-    own_image_name: "own_dry_martini.jpg",
+    image_name: "dry_martini",
+    own_image_name: "own_dry_martini",
     ingredients: [
       {
         quantity: 5.0,
@@ -288,8 +271,8 @@ export const Cocktails: Cocktail[] = [
   {
     id: 10,
     name: "gibson",
-    image_name: "gibson.jpg",
-    own_image_name: "own_gibson.jpg",
+    image_name: "gibson",
+    own_image_name: "own_gibson",
     ingredients: [
       {
         quantity: 5.0,
@@ -313,8 +296,8 @@ export const Cocktails: Cocktail[] = [
   {
     id: 11,
     name: "espresso martini",
-    image_name: "espresso_martini.jpg",
-    own_image_name: "own_espresso_martini.jpg",
+    image_name: "espresso_martini",
+    own_image_name: "own_espresso_martini",
     ingredients: [
       {
         quantity: 4.0,
@@ -346,8 +329,8 @@ export const Cocktails: Cocktail[] = [
   {
     id: 12,
     name: "hugo",
-    image_name: "hugo.jpg",
-    own_image_name: "own_hugo.jpg",
+    image_name: "hugo",
+    own_image_name: "own_hugo",
     ingredients: [
       {
         quantity: 6.0,
@@ -373,8 +356,8 @@ export const Cocktails: Cocktail[] = [
   {
     id: 13,
     name: "gin and tonic",
-    image_name: "gin_and_tonic.jpg",
-    own_image_name: "own_gin_and_tonic.jpg",
+    image_name: "gin_and_tonic",
+    own_image_name: "own_gin_and_tonic",
     ingredients: [
       {
         quantity: 4.0,
@@ -394,8 +377,8 @@ export const Cocktails: Cocktail[] = [
   {
     id: 14,
     name: "aperol spitz",
-    image_name: "aperol_spitz.jpg",
-    own_image_name: "own_aperol_spitz.jpg",
+    image_name: "aperol_spitz",
+    own_image_name: "own_aperol_spitz",
     ingredients: [
       {
         quantity: 6.0,
@@ -421,8 +404,8 @@ export const Cocktails: Cocktail[] = [
   {
     id: 15,
     name: "negroni",
-    image_name: "negroni.jpg",
-    own_image_name: "own_negroni.jpg",
+    image_name: "negroni",
+    own_image_name: "own_negroni",
     ingredients: [
       {
         quantity: 3.0,
@@ -449,8 +432,8 @@ export const Cocktails: Cocktail[] = [
   {
     id: 16,
     name: "americano",
-    image_name: "americano.jpg",
-    own_image_name: "own_americano.jpg",
+    image_name: "americano",
+    own_image_name: "own_americano",
     ingredients: [
       {
         quantity: 3.0,
@@ -477,8 +460,8 @@ export const Cocktails: Cocktail[] = [
   {
     id: 17,
     name: "margarita",
-    image_name: "margarita.jpg",
-    own_image_name: "own_margarita.jpg",
+    image_name: "margarita",
+    own_image_name: "own_margarita",
     ingredients: [
       {
         quantity: 4.0,
@@ -505,8 +488,8 @@ export const Cocktails: Cocktail[] = [
   {
     id: 18,
     name: "frozen margarita",
-    image_name: "frozen_margarita.jpg",
-    own_image_name: "own_frozen_margarita.jpg",
+    image_name: "frozen_margarita",
+    own_image_name: "own_frozen_margarita",
     ingredients: [
       {
         quantity: 4.0,
@@ -533,8 +516,8 @@ export const Cocktails: Cocktail[] = [
   {
     id: 19,
     name: "raspberry margarita",
-    image_name: "raspberry_margarita.jpg",
-    own_image_name: "own_raspberry_margarita.jpg",
+    image_name: "raspberry_margarita",
+    own_image_name: "own_raspberry_margarita",
     ingredients: [
       {
         quantity: 4.0,
@@ -566,8 +549,8 @@ export const Cocktails: Cocktail[] = [
   {
     id: 20,
     name: "blue margarita",
-    image_name: "blue_margarita.jpg",
-    own_image_name: "own_blue_margarita.jpg",
+    image_name: "blue_margarita",
+    own_image_name: "own_blue_margarita",
     ingredients: [
       {
         quantity: 4.0,
@@ -594,8 +577,8 @@ export const Cocktails: Cocktail[] = [
   {
     id: 21,
     name: "bellini",
-    image_name: "bellini.jpg",
-    own_image_name: "own_bellini.jpg",
+    image_name: "bellini",
+    own_image_name: "own_bellini",
     ingredients: [
       {
         quantity: 2.0,
@@ -617,8 +600,8 @@ export const Cocktails: Cocktail[] = [
   {
     id: 22,
     name: "testarossa",
-    image_name: "testarossa.jpg",
-    own_image_name: "own_testarossa.jpg",
+    image_name: "testarossa",
+    own_image_name: "own_testarossa",
     ingredients: [
       {
         quantity: 2.0,
@@ -640,8 +623,8 @@ export const Cocktails: Cocktail[] = [
   {
     id: 23,
     name: "kir royal",
-    image_name: "kir_royal.jpg",
-    own_image_name: "own_kir_royal.jpg",
+    image_name: "kir_royal",
+    own_image_name: "own_kir_royal",
     ingredients: [
       {
         quantity: 1.0,
@@ -663,8 +646,8 @@ export const Cocktails: Cocktail[] = [
   {
     id: 24,
     name: "mimosa",
-    image_name: "mimosa.jpg",
-    own_image_name: "own_mimosa.jpg",
+    image_name: "mimosa",
+    own_image_name: "own_mimosa",
     ingredients: [
       {
         quantity: "1/2",
@@ -686,8 +669,8 @@ export const Cocktails: Cocktail[] = [
   {
     id: 25,
     name: "tequila sunrise",
-    image_name: "tequila_sunrise.png",
-    own_image_name: "own_tequila_sunrise.jpg",
+    image_name: "tequila_sunrise",
+    own_image_name: "own_tequila_sunrise",
     ingredients: [
       {
         quantity: 4.0,
@@ -712,8 +695,8 @@ export const Cocktails: Cocktail[] = [
   {
     id: 26,
     name: "b52",
-    image_name: "b52.jpg",
-    own_image_name: "own_b52.jpg",
+    image_name: "b52",
+    own_image_name: "own_b52",
     ingredients: [
       {
         quantity: "1/3",
@@ -740,8 +723,8 @@ export const Cocktails: Cocktail[] = [
   {
     id: 27,
     name: "bloody brain",
-    image_name: "bloody_brain.jpg",
-    own_image_name: "own_bloody_brain.jpg",
+    image_name: "bloody_brain",
+    own_image_name: "own_bloody_brain",
     ingredients: [
       {
         quantity: "2/3",
@@ -768,8 +751,8 @@ export const Cocktails: Cocktail[] = [
   {
     id: 28,
     name: "orgasm",
-    image_name: "orgasm.jpg",
-    own_image_name: "own_orgasm.jpg",
+    image_name: "orgasm",
+    own_image_name: "own_orgasm",
     ingredients: [
       {
         quantity: 3.0,
@@ -796,8 +779,8 @@ export const Cocktails: Cocktail[] = [
   {
     id: 29,
     name: "chokito",
-    image_name: "chokito.jpg",
-    own_image_name: "own_chokito.jpg",
+    image_name: "chokito",
+    own_image_name: "own_chokito",
     ingredients: [
       {
         quantity: 2.0,
@@ -834,8 +817,8 @@ export const Cocktails: Cocktail[] = [
   {
     id: 30,
     name: "grasshopper",
-    image_name: "grasshopper.jpg",
-    own_image_name: "own_grasshopper.jpg",
+    image_name: "grasshopper",
+    own_image_name: "own_grasshopper",
     ingredients: [
       {
         quantity: 2.0,
@@ -862,8 +845,8 @@ export const Cocktails: Cocktail[] = [
   {
     id: 31,
     name: "long island iced tea",
-    image_name: "long_island_iced_tea.jpg",
-    own_image_name: "own_long_island_iced_tea.jpg",
+    image_name: "long_island_iced_tea",
+    own_image_name: "own_long_island_iced_tea",
     ingredients: [
       {
         quantity: 1.5,
@@ -918,8 +901,8 @@ export const Cocktails: Cocktail[] = [
   {
     id: 32,
     name: "mai tai",
-    image_name: "mai_tai.jpg",
-    own_image_name: "own_mai_tai.jpg",
+    image_name: "mai_tai",
+    own_image_name: "own_mai_tai",
     ingredients: [
       {
         quantity: 4.0,
@@ -957,8 +940,8 @@ export const Cocktails: Cocktail[] = [
   {
     id: 33,
     name: "gin fizz",
-    image_name: "gin_fizz.jpg",
-    own_image_name: "own_gin_fizz.jpg",
+    image_name: "gin_fizz",
+    own_image_name: "own_gin_fizz",
     ingredients: [
       {
         quantity: 4.0,
@@ -989,8 +972,8 @@ export const Cocktails: Cocktail[] = [
   {
     id: 34,
     name: "singapore sling",
-    image_name: "singapore_sling.jpg",
-    own_image_name: "own_singapore_sling.jpg",
+    image_name: "singapore_sling",
+    own_image_name: "own_singapore_sling",
     ingredients: [
       {
         quantity: 3.0,
@@ -1043,8 +1026,8 @@ export const Cocktails: Cocktail[] = [
   {
     id: 35,
     name: "fruit caipirinha",
-    image_name: "fruit_caipirinha.jpg",
-    own_image_name: "own_fruit_caipirinha.jpg",
+    image_name: "fruit_caipirinha",
+    own_image_name: "own_fruit_caipirinha",
     ingredients: [
       {
         quantity: "1/2",
@@ -1076,8 +1059,8 @@ export const Cocktails: Cocktail[] = [
   {
     id: 36,
     name: "caipirinha",
-    image_name: "caipirinha.jpg",
-    own_image_name: "own_caipirinha.jpg",
+    image_name: "caipirinha",
+    own_image_name: "own_caipirinha",
     ingredients: [
       {
         quantity: 1.0,
@@ -1106,8 +1089,8 @@ export const Cocktails: Cocktail[] = [
   {
     id: 37,
     name: "old fashioned",
-    image_name: "old_fashioned.jpg",
-    own_image_name: "own_old_fashioned.jpg",
+    image_name: "old_fashioned",
+    own_image_name: "own_old_fashioned",
     ingredients: [
       {
         quantity: 4.0,
@@ -1142,8 +1125,8 @@ export const Cocktails: Cocktail[] = [
   {
     id: 38,
     name: "whiskey sour",
-    image_name: "whiskey_sour.jpg",
-    own_image_name: "own_whiskey_sour.jpg",
+    image_name: "whiskey_sour",
+    own_image_name: "own_whiskey_sour",
     ingredients: [
       {
         quantity: 5.0,
@@ -1175,8 +1158,8 @@ export const Cocktails: Cocktail[] = [
   {
     id: 39,
     name: "bloody mary",
-    image_name: "bloody_mary.jpg",
-    own_image_name: "own_bloody_mary.jpg",
+    image_name: "bloody_mary",
+    own_image_name: "own_bloody_mary",
     ingredients: [
       {
         quantity: 4.0,
@@ -1209,8 +1192,8 @@ export const Cocktails: Cocktail[] = [
   {
     id: 40,
     name: "screwdriver",
-    image_name: "screwdriver.jpg",
-    own_image_name: "own_screwdriver.jpg",
+    image_name: "screwdriver",
+    own_image_name: "own_screwdriver",
     ingredients: [
       {
         quantity: 4.0,
@@ -1231,8 +1214,8 @@ export const Cocktails: Cocktail[] = [
   {
     id: 41,
     name: "cosmopolitan",
-    image_name: "cosmopolitan.jpg",
-    own_image_name: "own_cosmopolitan.jpg",
+    image_name: "cosmopolitan",
+    own_image_name: "own_cosmopolitan",
     ingredients: [
       {
         quantity: 4.0,
@@ -1264,8 +1247,8 @@ export const Cocktails: Cocktail[] = [
   {
     id: 42,
     name: "kamikaze",
-    image_name: "kamikaze.jpg",
-    own_image_name: "own_kamikaze.jpg",
+    image_name: "kamikaze",
+    own_image_name: "own_kamikaze",
     ingredients: [
       {
         quantity: 2.0,
@@ -1292,8 +1275,8 @@ export const Cocktails: Cocktail[] = [
   {
     id: 43,
     name: "fruit kamikaze",
-    image_name: "fruit_kamikaze.jpg",
-    own_image_name: "own_fruit_kamikaze.jpg",
+    image_name: "fruit_kamikaze",
+    own_image_name: "own_fruit_kamikaze",
     ingredients: [
       {
         quantity: 2.0,
@@ -1320,8 +1303,8 @@ export const Cocktails: Cocktail[] = [
   {
     id: 44,
     name: "swimming pool",
-    image_name: "swimming_pool.jpg",
-    own_image_name: "own_swimming_pool.jpg",
+    image_name: "swimming_pool",
+    own_image_name: "own_swimming_pool",
     ingredients: [
       {
         quantity: 4.0,
@@ -1358,8 +1341,8 @@ export const Cocktails: Cocktail[] = [
   {
     id: 45,
     name: "strawberry colada",
-    image_name: "strawberry_colada.jpg",
-    own_image_name: "own_strawberry_colada.jpg",
+    image_name: "strawberry_colada",
+    own_image_name: "own_strawberry_colada",
     ingredients: [
       {
         quantity: 4.0,
@@ -1401,8 +1384,8 @@ export const Cocktails: Cocktail[] = [
   {
     id: 46,
     name: "piña colada",
-    image_name: "pina_colada.jpg",
-    own_image_name: "own_pina_colada.jpg",
+    image_name: "pina_colada",
+    own_image_name: "own_pina_colada",
     ingredients: [
       {
         quantity: 4.0,
@@ -1439,8 +1422,8 @@ export const Cocktails: Cocktail[] = [
   {
     id: 47,
     name: "sex on the beach",
-    image_name: "sex_on_the_beach.jpg",
-    own_image_name: "own_sex_on_the_beach.jpg",
+    image_name: "sex_on_the_beach",
+    own_image_name: "own_sex_on_the_beach",
     ingredients: [
       {
         quantity: 4.0,

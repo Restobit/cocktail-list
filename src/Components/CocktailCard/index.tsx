@@ -1,8 +1,7 @@
-import { Cocktail } from "../data";
-import cocktailImage from "../cocktail.png";
-import tequilsSunrise from "../tequila_sunrise.png";
+import { Cocktail } from "./CocktailCard.types";
+import { images } from "../../Assets/Images";
 
-export default function Card({
+export const CocktailCard = ({
   id,
   name,
   image_name,
@@ -13,19 +12,14 @@ export default function Card({
   decoration,
   instructions,
   other_info,
-}: Cocktail) {
+}: Cocktail) => {
+  const imagePath = images[own_image_name]
+    ? images[own_image_name]
+    : images[image_name] ?? images["default"];
+
   return (
-    <div className="card">
-      {image_name === "tequila_sunrise.png" ? (
-        <img
-          src={tequilsSunrise}
-          alt="tequila sunrise"
-          width="auto"
-          height="200"
-        />
-      ) : (
-        <img src={cocktailImage} alt="cocktail" width="100" height="200" />
-      )}
+    <div className="cocktail-card">
+      <img src={imagePath} alt={name} width="auto" height="200" />
 
       <div className="cocktail">
         <div className="title">
@@ -76,4 +70,4 @@ export default function Card({
       </div>
     </div>
   );
-}
+};
